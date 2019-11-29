@@ -20,15 +20,16 @@
     padding: 20px;
     text-decoration: none;
     font-size: 17px;
+
 }
 
 .topnav a:hover {
-    background-color:#4aaaa5;
+    background-color: #99260098;
     color: #ffffff;
 }
 
 .name {
-    background-color: #4aaaa5;
+    background-color: #99260098;
     float: left;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -38,17 +39,49 @@
 }
 
 @media screen and (max-width: 640px) {
-    .column{
-        background-color: #4aaaa5;
+.column{
+    background-color: #99260098;
+}
+.nametag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 }
 
-h2, h3 {
-    color: #4aaaa5;
+h2, h3, h4 {
+    color: #99260098;
     margin-left: 20px;
 }
 
+.food, .travel, .photo {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.boxcontainer {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foody, .travelling, .photography{
+    background-color: #99260098;
+    color: white;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.boxcontainer1 {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .main { 
     background-color: #ffffff;
     width: 960px;
@@ -63,11 +96,12 @@ h2, h3 {
 .mainindex { 
     background-color: #ffffff;
     width: 960px;
-    height: auto;
+    height: 1000px;
     margin-top: 30px;
     border: 1px solid #dddddd;
     margin-left: auto;
     margin-right: auto;
+    overflow: auto;
 }
 
 .box {
@@ -94,21 +128,38 @@ h2, h3 {
 
 body {
 
-    background-image: url("../images/beanstalk.png");
+    background-image: url("../images/camera.jpg");
     background-repeat: repeat;
+    margin: 0 0 100px;
+
+
 }
 
-.footer {
-    position: fixed;
+html {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    }
+
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+    
+footer {
+    height: 50px;
+    width: 100%;
     left: 0;
     bottom: 0;
-    width: 100%;
     color: #ffffff;
     font: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     text-align: center;
     background-color: #666666;
-    border-top: 5px solid #4aaaa5;
+    border-top: 5px solid #99260098;
+    position: fixed;
 }
+
 
 .box1, .box2, .box3, .box4, .box5 {
     width: 200px;
@@ -124,7 +175,7 @@ body {
     margin-top: 10px;
 }
 
-.hangman, .triviagame, .rockpaper, .rpggame, .infowidget {
+/* .hangman, .triviagame, .rockpaper, .rpggame, .infowidget {
     position: relative;
     text-align: center;
     color: white;
@@ -139,11 +190,11 @@ body {
     top: 150px;
     width: 92%;
     color: #ffffff;
-    background-color: #4aaaa5;
+    background-color: #99260098;
     padding-top: 10px;
     padding-bottom: 10px;
     font: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
+} */
 
 #name, #email, #message {
     width: 90%;
@@ -160,7 +211,7 @@ body {
 }
 
 input[type=submit] {
-    background-color:  #4aaaa5;
+    background-color:  #99260098;
     color: white;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -171,9 +222,40 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color:  white;
-    color: #4aaaa5;
+    color: #99260098;
 }
 
  label {
     margin-left: 30px
 }
+
+.text {
+    background-color: #99260098;
+    padding: 5px;
+    border-radius: 5%;
+    color: white;
+}
+
+.project {
+    height: 300px;
+    overflow: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* Style all font awesome icons */
+.fa {
+    padding-top: 5px;
+    font-size: 30px;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
